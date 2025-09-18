@@ -8,7 +8,7 @@
     border: 1px solid var(--table-border-color);
 }
 
-/* thead (agora com o snippet usa a mesma cor de borda que o tbody) */
+/* thead (com esse snippet, vai usar a mesma cor de borda que o tbody) */
 .callout-content table thead th {
     border: 1px solid var(--table-border-color);
 }
