@@ -1,0 +1,7 @@
+/* toda nota que tiver .center-images como uma classe css
+ * vai ter as imagens dentro das células das tabelas centralizadas */
+.center-images td img {
+    /* centralizar */
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,19 @@
+.callout-content tbody, .markdown-rendered tbody, .markdown-rendered tbody tr:nth-child(2n) {
+    /* deixar os rows com padrão zebrado com uma cor levemente mais escura*/
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* tbody */
+.callout-content table tbody td {
+    border: 1px solid var(--table-border-color);
+}
+
+/* thead (agora com o snippet usa a mesma cor de borda que o tbody) */
+.callout-content table thead th {
+    border: 1px solid var(--table-border-color);
+}
+
+/* fundo escuro no thead */
+.callout-content table thead *, .callout-content table thead tr th:nth-child(2n+2) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
