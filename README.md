@@ -1,0 +1,1 @@
+fontes convertidas pra base64 em: https://hellogreg.github.io/woff2base/
