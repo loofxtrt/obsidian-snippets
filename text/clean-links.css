@@ -1,21 +1,25 @@
-/* remover decorações de links em modo de leitura (renderizado) */
-.markdown-preview-view a,
-.markdown-preview-view .internal-link,
+/* remove decoração de links externos no reading view */
 .markdown-preview-view .external-link {
   text-decoration: none !important;
 }
 
-/* remover para links internos (wikilinks) no modo de edição ou live preview */
-.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline,
-.markdown-source-view.mod-cm6 .cm-url,
-.cm-hmd-internal-link .cm-underline,
-.cm-url {
+/* remove decoração de links internos no reading view */
+.markdown-preview-view .internal-link {
   text-decoration: none !important;
 }
 
-/* remover para links externos no modo de edição */
-.external-link,
-.cm-hmd-external-link,
-.markdown-source-view .cm-link .cm-url {
+/* remove decoração de links externos em live preview / source mode */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  text-decoration: none !important;
+}
+
+/* remove decoração de links internos em live preview / source mode */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline {
+  text-decoration: none !important;
+}
+
+/* algumas vezes tem underline mesmo pra links “markdown” no preview/rendered */
+.markdown-rendered .internal-link {
   text-decoration: none !important;
 }
