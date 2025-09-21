@@ -1,0 +1,21 @@
+/* remover decorações de links em modo de leitura (renderizado) */
+.markdown-preview-view a,
+.markdown-preview-view .internal-link,
+.markdown-preview-view .external-link {
+  text-decoration: none !important;
+}
+
+/* remover para links internos (wikilinks) no modo de edição ou live preview */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url,
+.cm-hmd-internal-link .cm-underline,
+.cm-url {
+  text-decoration: none !important;
+}
+
+/* remover para links externos no modo de edição */
+.external-link,
+.cm-hmd-external-link,
+.markdown-source-view .cm-link .cm-url {
+  text-decoration: none !important;
+}
