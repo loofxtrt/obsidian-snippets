@@ -1,5 +1,7 @@
 kbd {
-    padding: 0px 8px;
+    height: 22px;
+
+    padding: 0px 10px;
     margin-bottom: 0px;
 
     /* borda com a mesma cor do texto, e levemente mais grossa em baixo */
@@ -9,4 +11,19 @@ kbd {
     font-family: var(--font-monospace); /* garantir que a fonte seja a monospaced */
 
     display: inline-flex;
+    align-items: center; /* centraliza o texto verticalmente */
+    justify-content: center; /* centraliza o texto horizontalmente */
 }
+
+/*kbd {*/
+/*    padding: 0px 8px;*/
+/*    margin-bottom: 0px;*/
+
+    /* borda com a mesma cor do texto, e levemente mais grossa em baixo */
+/*    border: 1px solid currentColor;*/
+/*    border-bottom-width: 2px;*/
+
+/*    font-family: var(--font-monospace); /* garantir que a fonte seja a monospaced */*/
+
+/*    display: inline-flex;*/
+/* } */
