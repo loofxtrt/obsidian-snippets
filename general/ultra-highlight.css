@@ -1,0 +1,36 @@
+/*.tree-item-self.nav-folder-title[data-path="notas"] {
+    background: linear-gradient(135deg, var(--color-accent), transparent);
+}
+
+.tree-item-self.nav-folder-title[data-path="notas"] * {
+    color: var(--background-secondary);
+}*/
+
+
+
+/*.tree-item-self.nav-folder-title[data-path="notas"] {
+    background: linear-gradient(35deg, transparent 30%, var(--color-accent));
+}*/
+
+
+
+/*.tree-item-self.nav-folder-title[data-path="notas"] {
+    background: linear-gradient(35deg, var(--color-accent), transparent 20%, var(--color-accent));
+}*/
+
+
+
+.tree-item-self.nav-folder-title[data-path="notas"] {
+    /* deixar a cor um pouco mais transparente */
+    --highlight: color-mix(in srgb, var(--color-accent) 70%, transparent);
+
+    /* aplicar no fundo da pasta */
+    background: linear-gradient(35deg, transparent 30%, var(--highlight));
+}
+
+
+
+.tree-item-self.nav-folder-title[data-path="notas"] * {
+    /* cor dos ícones e textos */
+    color: var(--color-accent) !important;
+}
